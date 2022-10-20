@@ -9,11 +9,15 @@ namespace _4
     internal class Program
     {
         static void Main(string[] args)
-        { int number1 = 10;
+        { int number1 =30;
           int number2 = 20;
-            int temp=number1;
-          number1= number2;
-            Console.WriteLine(number1);
+            if (number1 > number2)
+            {
+                int temp=number1;
+                number1 = number2;
+                number2 = temp;
+            }
+            Console.WriteLine($"{number1}~{number2}");
         }
     }
 }
